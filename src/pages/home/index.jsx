@@ -687,7 +687,7 @@ export default function Home() {
                 <a
                   href={record.link}
                   target="_blank"
-                  className="hidden rounded-md bg-gray-200 px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:block"
+                  className=" rounded-md bg-gray-200 px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
                 >
                   View<span className="sr-only">, {record.period}</span>
                 </a>
