@@ -46,27 +46,27 @@ export default function SidebarLayout() {
       <div>
 
         <div className="">
-          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-2 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-4 sm:px-4 lg:px-8">
+          <div className="sticky top-0 z-40 sm:flex sm:h-16 shrink-0 items-center gap-x-2 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-4 sm:px-4 lg:px-8">
             {/* <button type="button" onClick={() => setSidebarOpen(true)} className="-m-2.5 p-2.5 text-gray-700 lg:hidden">
               <span className="sr-only">Open sidebar</span>
               <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button> */}
-            <div className="flex h-16 shrink-0 items-center">
+            <div className="flex sm:h-16 h-12 shrink-0 items-center">
               <NavLink
                to={'/karnataka-itihasa-academy'}
               >
               <img
                 alt="Kannada itihasa academy"
                 src={logo}
-                className="lg:h-8 w-auto md:h-6 h-4"
+                className="lg:h-8 w-auto h-6 "
               />
               </NavLink>
             </div>
             {/* Separator */}
 
-            <div aria-hidden="true" className="h-6 w-px bg-gray-200 lg:hidden" />
+            {/* <div aria-hidden="true" className="h-6 w-px bg-gray-200 lg:hidden" /> */}
 
-            <div className="flex flex-1 relative gap-x-4 self-stretch lg:gap-x-6">
+            <div className="flex flex-1 h-14 sm:h-auto relative mb-2 sm:mb-0 gap-x-4 self-stretch lg:gap-x-6">
               <div className="relative  flex flex-1">
                 <label htmlFor="search-field" className="sr-only">
                   Search
@@ -82,7 +82,7 @@ export default function SidebarLayout() {
                   value={searchText}
                   onChange={handleSearchTextChange}
                   placeholder="Search in Kannada"
-                  className="block w-full border-0 py-0 my-2 pl-8 pr-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
+                  className="block w-full border-0 py-0 sm:my-2 pl-8 pr-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
                 />
                 
               </div>
