@@ -53,7 +53,7 @@ export default function SidebarLayout() {
             </button> */}
             <div className="flex sm:h-16 h-12 shrink-0 items-center">
               <NavLink
-               to={'/karnataka-itihasa-academy'}
+               to={'/articlesearch'}
               >
               <img
                 alt="Kannada itihasa academy"
